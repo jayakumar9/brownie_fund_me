@@ -9,6 +9,8 @@ compiler:
    # refer video 2.solidity time 0:43:30
 dotenv: .env   
 networks:
+  # default:-development can be changed as per your requirements
+  default: development
   rinkeby:
     eth_usd_price_feed:'0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
     verify: True
