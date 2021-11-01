@@ -3,7 +3,7 @@
 from brownie import network, config, accounts
 from web3 import web3
 
-FORKED_LOCAL_ENVIRONMENTS=["mainnet-fork"]
+FORKED_LOCAL_ENVIRONMENTS=["mainnet-fork","mainnet-fork-dev"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS=["development","ganache-local"]
 
 
