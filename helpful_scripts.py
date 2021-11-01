@@ -3,14 +3,16 @@
 from brownie import network, config, accounts
 from web3 import web3
 
+FORKED_LOCAL_ENVIRONMENTS=["mainnet-fork"]
 LOCAL_BLOCKCHAIN_ENVIRONMENTS=["development","ganache-local"]
+
 
 DECIMALS=18
 STARTING_PRICE=2000
 # refer video 2.solidity time 1:08:52
 
 def get_account():
-  if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
+  if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS or network.show_active() in FORKED_LOCAL_ENVIRONMENTS:
     return accounts[0]
   else:
     return accounts.add(config["wallets"]["from_key"])
