@@ -1,0 +1,14 @@
+create this file under brownie_fund_me
+dependencies:
+  #-<organization/repo>@<version>
+  -smartcontractkit/chaillink-brownie-contracts@1.1.1
+compiler:
+  solc:
+   remappings:
+   -'@chainlink=smartcontractkit/chaillink-brownie-contracts@1.1.1'
+   # refer video 2.solidity time 0:43:30
+   
+   
+  
+  
+   
