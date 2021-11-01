@@ -11,7 +11,7 @@ def deploy_fund_me():
   #if we are on a persistent network like rinkeby, use the asssociated address
   # otherwise, deploy mocks
   if network.show_active()!="development":
-    price_feed_address="0x8A753747A1Fa494EC906cE90E9f37563A8AF630e"
+    price_feed_address=config["networks"][network.show_active()]["eth_usd_price_feed"]
   fund_me=FundMe.deploy(price_feed_address,{"from":account}, publish_source=True)
   print(f"Contract deployed to {fund_me.address}"
 
