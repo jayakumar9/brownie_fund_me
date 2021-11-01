@@ -11,7 +11,7 @@ def deploy_fund_me():
   
   #if we are on a persistent network like rinkeby, use the asssociated address
   # otherwise, deploy mocks
-  if network.show_active()!="development":
+  if network.show_active() not in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
     price_feed_address=config["networks"][network.show_active()]["eth_usd_price_feed"]
   else:
     deploy_mocks()   
