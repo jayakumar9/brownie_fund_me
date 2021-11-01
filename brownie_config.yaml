@@ -7,6 +7,9 @@ compiler:
    remappings:
    -'@chainlink=smartcontractkit/chaillink-brownie-contracts@1.1.1'
    # refer video 2.solidity time 0:43:30
+dotenv: .env   
+wallets:
+  from_key: ${PRIVATE_KEY}
    
    
   
