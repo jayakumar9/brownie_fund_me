@@ -14,3 +14,7 @@ then
 >>>brownie networks add Etherium ganache-local host=http://0.0.0.0:8545 chainid=1337
 then
 >>>brownie networks list
+
+
+#Note-Forked Blockchain is copy of original & if any changes done in Forked, will not affect original.
+refer video 2.solidity time 1:28:20
