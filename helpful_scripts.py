@@ -3,6 +3,8 @@
 from brownie import network, config, accounts
 from web3 import web3
 
+LOCAL_BLOCKCHAIN_ENVIRONMENTS=["development","ganache-local"]
+
 DECIMALS=18
 STARTING_PRICE=2000
 # refer video 2.solidity time 1:08:52
