@@ -8,6 +8,9 @@ compiler:
    -'@chainlink=smartcontractkit/chaillink-brownie-contracts@1.1.1'
    # refer video 2.solidity time 0:43:30
 dotenv: .env   
+networks:
+  rinkeby:
+    eth_usd_price_feed:'0x8A753747A1Fa494EC906cE90E9f37563A8AF630e'
 wallets:
   from_key: ${PRIVATE_KEY}
    
