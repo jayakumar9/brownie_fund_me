@@ -3,6 +3,10 @@
 from brownie import network, config, accounts
 from web3 import web3
 
+DECIMALS=18
+STARTING_PRICE=2000
+# refer video 2.solidity time 1:08:52
+
 def get_account():
   if network.show_active()=="development":
     return accounts[0]
@@ -12,5 +16,5 @@ def deploy_mocks():
   print(f"The active network is {network.show_active()}")
   print(f"Deploying Mocks...")
   if len(MockV3Aggregator)<=0:
-     MockV3Aggregator.deploy(18,web3.towei(2000,"ether"),{"from":get_account})
+     MockV3Aggregator.deploy(DECIMALS,web3.towei(STARTING_PRICE,"ether"),{"from":get_account})
   print("Mocks Deployed!")     
