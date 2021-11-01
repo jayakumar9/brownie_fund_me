@@ -1,0 +1,16 @@
+# this file as a note book for "https://github.com/jayakumar9/brownie_fund_me" project
+
+
+
+
+
+
+
+
+adding network to the brownie fundme project put the following comment and proceed
+refer video 2.solidity time 1:10:20
+>>>brownie networks list
+then
+>>>brownie networks add Etherium ganache-local host=http://0.0.0.0:8545 chainid=1337
+then
+>>>brownie networks list
