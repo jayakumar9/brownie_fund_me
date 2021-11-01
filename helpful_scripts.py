@@ -10,7 +10,7 @@ STARTING_PRICE=2000
 # refer video 2.solidity time 1:08:52
 
 def get_account():
-  if network.show_active()=="development":
+  if network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS:
     return accounts[0]
   else:
     return accounts.add(config["wallets"]["from_key"])
